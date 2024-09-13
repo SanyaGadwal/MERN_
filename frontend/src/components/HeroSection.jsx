@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const HeroSection = () => {
@@ -6,30 +7,11 @@ const HeroSection = () => {
     <section className="heroSection" id="heroSection">
       <Navbar />
       <div className="container">
-        <div className="banner">
-          <div className="largeBox">
-            <h1 className="title">Delicious</h1>
-          </div>
-          <div className="combined_boxes">
-            <div className="imageBox">
-              <img src="./hero1.png" alt="hero" />
-            </div>
-            <div className="textAndLogo">
-              <div className="textWithSvg">
-                <h1 className="title">Food</h1>
-                <h1 className="title dishes_title">Dishes</h1>
-                <img src="./threelines.svg" alt="threelines" />
-              </div>
-              <img className="logo" src="logo.svg" alt="logo" />
-            </div>
-          </div>
-        </div>
-        <div className="banner">
-          <div className="imageBox">
-            <img src="hero2.png" alt="hero" />
-          </div>
-          <h1 className="title dishes_title">Dishes</h1>
-        </div>
+      <img src="./hero2.png" alt="he" className="bg"/>
+      <img src="./logo.png" alt="logo" className="lg"/>
+      <h1 class="gd">Gadwal Brothers</h1>
+      <h2 class="slogan">#HarGharModern</h2>
+      <Link to="/aboutus" className="abt">About Us</Link>
       </div>
     </section>
   );

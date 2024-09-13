@@ -7,32 +7,25 @@
   margin: 0;
   padding: 0;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar{ /*hides scrollbar*/
   display: none;
 }
 
 /********************** HERO SECTION COMPONENT STYLING **************************/
 /**********************************************************************************************************************/
 nav {
+  background-color: transparent; /* Fully transparent background */
+  color: white; /* Text color, ensure it's visible over the background image */
+  padding: 1.5rem; /* Padding for the navbar */
+  position:absolute;/* Fix the navbar at the top */
+  width: 100%; /* Full width of the viewport */
+  top: 0; /* Align it to the top */
+  z-index: 10; /* Ensure it is above other elements */
   display: flex;
-  max-width: 1500px;
-  min-width: 1500px;
-  padding: 25px 10px 40px 10px;
-  margin-bottom: 25px;
-  justify-content: space-between;
-  position: relative;
+  justify-content: space-between; /* Space out the items */
   align-items: center;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-}
-nav::after {
-  content: "";
-  position: absolute;
-  height: 0.6px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgb(201, 201, 201);
+  
 }
 nav .logo {
   flex: 1;
@@ -50,14 +43,14 @@ nav .navLinks {
 }
 nav .navLinks .links {
   display: flex;
-  gap: 25px;
+  gap: 40px;
 }
 nav .navLinks .links a {
   text-decoration: none;
-  color: #555;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 1.4px;
+  color: white;
+  font-size: 23px;
+  font-weight: 350;
+  letter-spacing: 2px;
 }
 nav .navLinks .links a:hover {
   color: #222;
@@ -81,9 +74,13 @@ nav .menuBtn:hover {
 nav .hamburger {
   display: none;
 }
-nav svg {
-  font-size: 1.75rem;
+nav .loginbtn{
+  font-size: larger;
 }
+.login {
+  color: white /* Ensure the text is visible */
+}
+/*
 @media (max-width: 1520px) {
   nav {
     min-width: 100%;
@@ -140,6 +137,8 @@ nav svg {
     margin-top: 20px;
   }
 }
+
+
 @media (max-width: 800px) {
   nav .showmenu {
     width: 96vw;
@@ -152,27 +151,80 @@ nav svg {
     border-radius: 0;
   }
 }
-/**********************************************************************************************************************/
+*********************************************************************************************************************/
 
 /********************** HERO SECTION COMPONENT STYLING **************************/
 /**********************************************************************************************************************/
 .heroSection {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
-  background: url(/background.svg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  padding: 0 15px;
+ 
 }
 .heroSection .container {
-  display: flex;
-  max-width: 1200px;
-  min-width: 1200px;
+    background-repeat: no-repeat;
+  position: relative;
 }
+.heroSection .container .bg {
+  width: 1500px; 
+  height: 700px;
+
+}
+.heroSection .container .lg {
+  width: 130px; 
+  border-radius: 70px;
+  position: relative;left: 690px;top:-560px;
+  border: 5px solid whitesmoke ;
+}
+.heroSection .container .gd{
+  position:relative;left:0px;top:-545px;
+  text-align: center;
+  font-size: 60px;
+  color: whitesmoke;
+  font-family:cursive;
+  font-weight:bold;
+  }
+  .heroSection .container  .slogan{
+      color: rgb(253, 232, 222);
+      position: relative;left: 650px ;top:-540px;
+      text-decoration-line: underline;
+      font-family:Arial, Helvetica, sans-serif;
+  }
+  .abt:link{
+    position:relative;left:630px;top:-450px;
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    /*background-color:rgb(242, 200, 122);*/
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+    text-decoration: none;
+    padding: 11px;
+    padding-inline: 30px;
+    
+    }
+  .abt:visited{
+    color:whitesmoke;
+    background-color:rgb(242, 200, 122);
+    text-decoration: none;
+  }
+  .abt:hover {
+    color: rgb(59, 27, 1);
+    transition-duration: 1s;
+    text-decoration: none; 
+  }
+  .abt:active {
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  /*
 .heroSection .container .banner:first-child {
   flex: 2;
   display: flex;
@@ -200,9 +252,7 @@ nav svg {
   right: 0;
   top: 0;
 }
-.heroSection .container .banner:first-child .dishes_title {
-  display: none;
-}
+
 .heroSection .container .banner:first-child .imageBox {
   width: 50%;
 }
@@ -258,8 +308,7 @@ nav svg {
     width: 100%;
     text-align: end;
   }
-  .heroSection .container .banner .textAndLogo .title,
-  .heroSection .container .banner .textAndLogo .logo {
+  .heroSection .container .banner .textAndLogo .title{
     margin-right: 60px;
   }
   .heroSection .container .banner:last-child .dishes_title {
@@ -290,10 +339,6 @@ nav svg {
   .heroSection .container .banner .title {
     text-align: center;
   }
-  .heroSection .container .banner .textAndLogo .title,
-  .heroSection .container .banner .textAndLogo .logo {
-    margin-right: 0;
-  }
   .heroSection .container .banner .textWithSvg {
     width: fit-content;
     margin: 0 auto;
@@ -321,16 +366,20 @@ nav svg {
     height: auto;
   }
 }
+*/
 /**********************************************************************************************************************/
 
 /******************* ABOUT US COMPONENT STYLING **************/
 /**********************************************************************************************************************/
+
+
 .about {
   display: flex;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #f9fbf2;
+  background-color: black;
+  margin-top: -260px;
 }
 .about .container {
   max-width: 1500px;
@@ -342,6 +391,10 @@ nav svg {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border-radius: 3%;
+  border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    opacity: 0.8;
 }
 .about .container .banner img {
   width: 100%;
@@ -349,7 +402,7 @@ nav svg {
 .heading {
   font-weight: 200;
   font-size: 4rem;
-  color: #111;
+  color: white;
 }
 .about .container .banner .mid {
   width: 65%;
@@ -357,6 +410,7 @@ nav svg {
   font-weight: 300;
   letter-spacing: 2px;
   word-spacing: 5px;
+  color: #f9fbf2;
 }
 .about .container .banner .top p {
   font-size: 18px;
@@ -444,18 +498,18 @@ nav svg {
   align-items: center;
 }
 .qualities .container {
-  min-width: 1500px;
-  max-width: 1500px;
-  display: flex;
-  flex-wrap: wrap;
+  display:flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; 
 }
 .qualities .container .card {
-  flex: 1;
+  flex: 1 0 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 0 100px;
+  margin: 25px;
 }
 .qualities .container .card img {
   margin-bottom: 25px;
@@ -470,6 +524,7 @@ nav svg {
   font-size: 18px;
   color: #333;
   font-weight: 300;
+  width: 110%;
 }
 @media (max-width: 1520px) {
   .qualities .container {
@@ -550,7 +605,7 @@ nav svg {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.menu .container .dishes_container .card button {
+.menu .container .dishes_container .card .btn1 {
   position: absolute;
   top: 40px;
   left: 25px;
@@ -564,6 +619,13 @@ nav svg {
 .menu .container .dishes_container .card:hover img {
   transition: 0.3s;
   transform: scale(1.03);
+}
+.menu .container .dishes_container .card .flex-container  {
+ display: flex !important;
+}
+.menu .container .dishes_container .card .flex-container .btn  {
+  background-color: red !important;
+  color: white !important;
 }
 @media (max-width: 1520px) {
   .menu .container {

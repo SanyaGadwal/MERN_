@@ -4,70 +4,137 @@
             {
                 "id": 1,
                 "image": "./quality_food.svg",
-                "title": "QUALITY FOOD",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "title": "SOURCING & PROCUREMENT",
+                "description": "Partner with leading manufacturers like Britannia & Modern Breads to source high-quality products, ensuring rigorous quality standards and streamlined procurement processes for timely delivery and cost efficiency." 
             },
             {
                 "id": 2,
                 "image": "./super_taste.svg",
-                "title": "SUPER TASTE",
-                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing sit amet elit. Sit voluptates quaerat pariatur." 
+                "title": "LOGISTICS & TRANSPORTATION",
+                "description": "Utilize a well-organized transportation network to ensure timely delivery of bakery items, with advanced warehousing, regular checks, and quality control to maintain product integrity and customer satisfaction." 
             },
             {
                 "id": 3,
                 "image": "./fast_delivery.svg",
-                "title": "FAST DELIVERY",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "title": "INVENTORY MANAGEMENT",
+                "description": "Maintain accurate stock levels through regular audits, effective demand forecasting, and strategic planning to ensure optimal inventory, prevent stockouts, and uphold quality standards." 
+            },
+            {
+                "id": 4,
+                "image": "./fast_delivery.svg",
+                "title": "WAREHOUSING SOLUTIONS",
+                "description": "repellat." 
+            },
+            {
+                "id": 5,
+                "image": "./fast_delivery.svg",
+                "title": "RETAILER SUPPORT",
+                "description": " repellat." 
+            },
+            {
+                "id": 6,
+                "image": "./fast_delivery.svg",
+                "title": "CUSTOMIZED SOLUTIONS",
+                "description": "repellat." 
             }
+
         ],
         "dishes": [
             {
                 "id": 1,
                 "image": "./dinner1.jpeg",
-                "title": "ROASTED LAMB RUMP",
-                "category": "Dinner"
+                "title": "MULTIGRAIN",
+                "category": "Breads",
+                "varients" : ["small","Medium","Large"],
+                "prices": {
+                    "small" : 20,
+                    "medium" : 40,
+                    "large" : 60
+                }
             },
             {
                 "id": 2,
                 "image": "./dinner2.png",
-                "title": "CITRUS CURED SALMON",
-                "category": "Dinner"
+                "title": "BROWN BREAD",
+                "category": "Breads",
+                "varients" : ["small","Medium","Large"],
+                "prices": {
+                    "small" : 20,
+                    "medium" : 20,
+                    "large" : 20
+                }
             },
             {
                 "id": 3,
                 "image": "./breakfast1.png",
                 "title": "PAN SEARED SEA BASS",
-                "category": "Breakfast"
+                "category": "Breakfast",
+                "varients" : ["small","Medium","Large"],
+                "prices": {
+                    "small" : 20,
+                    "medium" : 20,
+                    "large" : 20
+                }
             },
             {
                 "id": 4,
                 "image": "./dinner3.png",
                 "title": "STUFFED STRAWBERRY",
-                "category": "Dinner"
+                "category": "Dinner",
+                "varients" : ["small","Medium","Large"],
+                "prices": {
+                    "small" : 20,
+                    "medium" : 20,
+                    "large" : 20
+                }
             },
             {
                 "id": 5,
                 "image": "./lunch1.png",
                 "title": "BEEF BURGER MEAL",
-                "category": "Lunch"
+                "category": "Lunch",
+                "varients" : ["small","Medium","Large"],
+                "prices": {
+                    "small" : 20,
+                    "medium" : 20,
+                    "large" : 20
+                }
             },
             {
                 "id": 6,
                 "image": "./dinner4.png",
                 "title": "MUSSELS SOUP",
-                "category": "Dinner"
+                "category": "Dinner",
+                "varients" : ["small","Medium","Large"],
+                "prices": {
+                    "small" : 20,
+                    "medium" : 20,
+                    "large" : 20
+                }
             },
             {
                 "id": 7,
                 "image": "./dinner5.png",
                 "title": "ITALIAN SPAGHETTI",
-                "category": "Dinner"
+                "category": "Dinner",
+                "varients" : ["small","Medium","Large"],
+                "prices": {
+                    "small" : 20,
+                    "medium" : 20,
+                    "large" : 20
+                }
             },
             {
                 "id": 8,
                 "image": "./dinner6.png",
                 "title": "GRILLED FISH",
-                "category": "Dinner"
+                "category": "Dinner",
+                "varients" : ["small","Medium","Large"],
+                "prices": {
+                    "small" : 20,
+                    "medium" : 20,
+                    "large" : 20
+                }
             }
         ],
         "team": [
@@ -164,7 +231,7 @@
             },
             {
                 "id": 5,
-                "title": "RESERVATION",
+                "title": "HIRING",
                 "link": "reservation"
             }
         ]
