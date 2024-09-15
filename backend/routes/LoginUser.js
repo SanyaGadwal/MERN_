@@ -1,9 +1,11 @@
 import express from "express";
-import User from "../models/User.js"; // Import your User model
+import User from "../models/User.js";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 
 const router = express.Router();
 
-router.post("/login", async (req, res) => {
+router.post("/login", async (req, res, next) => {
   const { email, password } = req.body;
 
   // Check if email and password are provided
@@ -14,17 +16,30 @@ router.post("/login", async (req, res) => {
   try {
     // Find the user by email
     const user = await User.findOne({ email });
-
-    // If no user is found or the password doesn't match
-    if (!user || user.password !== password) {
-      return res.status(400).json({ success: false, message: "Invalid credentials" });
+    if (!user) {
+      return res.status(400).json({ success: false, message: "Invalid email or password" });
     }
 
-    // Successful login
-    return res.status(200).json({ success: true, message: "Login successful", user });
+    // Compare the provided password with the stored hashed password
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(400).json({ success: false, message: "Invalid email or password" });
+    }
+
+    // Create JWT token
+    const token = jwt.sign(
+      { id: user._id },
+      process.env.JWT_SECRET,
+      { expiresIn: "1h" }
+    );
+
+    res.status(200).json({
+      success: true,
+      message: "Logged in successfully",
+      token, // Return the token on login success
+    });
   } catch (error) {
-    // Handle any server errors
-    return res.status(500).json({ success: false, message: "Server error" });
+    next(error);
   }
 });
 
