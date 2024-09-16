@@ -71,14 +71,20 @@ nav .menuBtn:hover {
   transition: 0.3s;
   cursor: pointer;
 }
-nav .hamburger {
+ .hamburger {
   display: none;
 }
-nav .loginbtn{
+.loginbtn{
   font-size: larger;
 }
 .login {
   color: white /* Ensure the text is visible */
+}
+nav .beforeEntry .signUp{
+  font-size: larger;
+  display: flex;
+  color: white;
+  margin: 10px;
 }
 /*
 @media (max-width: 1520px) {
