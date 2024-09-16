@@ -8,9 +8,12 @@ import Modal from "react-bootstrap/Modal"; // Assuming you are using Bootstrap m
 import Cart from "../Pages/Cart/Cart"; // Update with the correct path to Cart.js
  // Assuming you have a Cart component
 
+
+
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [cartView, setCartView] = useState(false); // Initialize cartView state
+  
   const navigate = useNavigate();
   
   const handleLogout = () => {

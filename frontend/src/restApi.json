@@ -60,7 +60,7 @@
                 "varients" : ["small","Medium","Large"],
                 "prices": {
                     "small" : 20,
-                    "medium" : 20,
+                    "medium" : 40,
                     "large" : 20
                 }
             },
