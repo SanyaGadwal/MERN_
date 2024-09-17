@@ -37,6 +37,7 @@ const Login = () => {
       if (json.success) { 
         // Handle successful login
         alert('Login successful');
+        localStorage.setItem("userEmail",credentials.email)
         localStorage.setItem('token', json.token); // Store token in localStorage
         navigate('/'); // Redirect to dashboard or another page
       } else {
