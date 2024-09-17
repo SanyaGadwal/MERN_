@@ -38,10 +38,13 @@ const Navbar = () => {
                 {element.title}
               </ScrollLink>
             ))}
+            
           </div>
 
           <button className="menuBtn">OUR MENU</button>
         </div>
+
+
 
         <div className="hamburger" onClick={() => setShow(!show)}>
           <GiHamburgerMenu />
@@ -49,19 +52,20 @@ const Navbar = () => {
 
         {localStorage.getItem("token") ? (
           <div>
-            <RouterLink to="/login" className="login">My Orders</RouterLink>
+            <RouterLink to="/myOrder" className="login">My Orders</RouterLink>
           </div>
         ) : null}
 
         {!localStorage.getItem("token") ? (
           <div className="beforeEntry">
             <RouterLink to="/login" className="login">Login</RouterLink>
+            <RouterLink to="/join" className="join">Join</RouterLink>
             <RouterLink to="/createuser" className="signUp">SignUp</RouterLink>
           </div>
         ) : (
           <div>
             <div className="login" onClick={() => setCartView(true)}>
-              My Cart {" "}
+              Retailer's Cart {" "}
               <Badge pill bg="danger">2</Badge>
             </div>
             

@@ -7,6 +7,7 @@ import Success from './Pages/Success/Success';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
+import MyOrder from './Pages/MyOrder/MyOrder';
 import { CartProvider } from './components/ContextReducer'; // Import CartProvider
 import './App.css';
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/createuser' element={<SignUp />} />
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/success' element={<Success />} />
+          <Route path='/myOrder' element={<MyOrder />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Toaster />

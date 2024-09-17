@@ -80,6 +80,15 @@ nav .menuBtn:hover {
 .login {
   color: white /* Ensure the text is visible */
 }
+.join{
+  color: white ;
+  border: #555;
+  padding: 10px;
+  font-size: 23px;
+  text-decoration: none;
+  font-weight: 350;
+  letter-spacing: 2px;
+}
 nav .beforeEntry .signUp{
   font-size: larger;
   display: flex;
