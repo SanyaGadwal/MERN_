@@ -80,7 +80,7 @@ nav .menuBtn:hover {
 .login {
   color: white /* Ensure the text is visible */
 }
-.join{
+.feedback{
   color: white ;
   border: #555;
   padding: 10px;
@@ -95,6 +95,54 @@ nav .beforeEntry .signUp{
   color: white;
   margin: 10px;
 }
+
+.resume-upload-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.file-input {
+  margin: 20px 0;
+}
+
+.resume-preview-container {
+  position: relative;
+  margin: 20px 0;
+}
+
+.resume-preview {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.remove-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.upload-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+}
+
 /*
 @media (max-width: 1520px) {
   nav {

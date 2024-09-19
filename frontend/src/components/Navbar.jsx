@@ -40,7 +40,8 @@ const Navbar = () => {
             ))}
             
           </div>
-
+          <RouterLink to="/hiring" className="login">HIRING</RouterLink>
+          <RouterLink to="/feedback" className="login">Feedback</RouterLink>
           <button className="menuBtn">OUR MENU</button>
         </div>
 
@@ -59,7 +60,6 @@ const Navbar = () => {
         {!localStorage.getItem("token") ? (
           <div className="beforeEntry">
             <RouterLink to="/login" className="login">Login</RouterLink>
-            <RouterLink to="/join" className="join">Join</RouterLink>
             <RouterLink to="/createuser" className="signUp">SignUp</RouterLink>
           </div>
         ) : (
