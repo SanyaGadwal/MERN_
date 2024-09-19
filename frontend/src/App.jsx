@@ -10,6 +10,7 @@ import Hiring from './Pages/Hiring/Hiring';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import MyOrder from './Pages/MyOrder/MyOrder';
+
 import { CartProvider } from './components/ContextReducer'; // Import CartProvider
 import './App.css';
 

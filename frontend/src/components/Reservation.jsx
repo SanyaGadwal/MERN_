@@ -48,8 +48,8 @@ const Reservation = () => {
         </div>
         <div className="banner">
           <div className="reservation_form_box">
-            <h1>WANT TO BE A PART OF THE TEAM?</h1>
-            <p>For Further Questions, Please Call</p>
+            <h1>Maximize Your Brand’s Potential!</h1>
+            <p>Book an appointment</p>
             <form>
               <div>
                 <input
@@ -95,7 +95,7 @@ const Reservation = () => {
                 />
               </div>
               <button type="submit" onClick={handleReservation}>
-                RESERVE NOW{" "}
+                BOOK NOW{" "}
                 <span>
                   <HiOutlineArrowNarrowRight />
                 </span>

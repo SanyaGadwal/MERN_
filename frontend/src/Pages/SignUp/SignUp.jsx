@@ -48,6 +48,7 @@ export default function SignUp() {
     <>
       <div className='container'>
         <form onSubmit={handleSubmit}>
+          <div>Grow Your Business with Us!</div>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name</label>
             <input

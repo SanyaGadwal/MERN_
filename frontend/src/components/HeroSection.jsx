@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="heroSection" id="heroSection">
       <Navbar />
-      <div className="container">
+      <div className="container-fluid">
       <img src="./hero2.png" alt="he" className="bg"/>
       <img src="./logo.png" alt="logo" className="lg"/>
       <h1 class="gd">Gadwal Brothers</h1>
